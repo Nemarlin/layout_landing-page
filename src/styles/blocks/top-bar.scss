@@ -1,0 +1,10 @@
+.top-bar__logo {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+
+  @include on-tablet {
+    top: 48px;
+    padding: 0 72px;
+  }
+}
