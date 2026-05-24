@@ -1,27 +1,27 @@
 .header {
   position: relative;
   box-sizing: border-box;
-  padding: 20px;
   height: 100vh;
-  background-image: url(/images/header-bg-mobile.png);
+  background-image: url(/images/header-bg.png);
   background-size: cover;
   background-position: center;
+  color: $menu-text-color;
 
   &__bottom {
   position: absolute;
-  top: 260px;
+  top: $header-botton-top;
   left: 50%;
   transform: translateX(-50%);
 
-  height: 80px;
-  width: 280px;
+  height: $header-bottom-height;
+  width: $header-bottom-weight;
 
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
 
-  @include on-tablet {
+  @include onTablet {
     top: 256px;
     width: 400px;
     height: 128px;
@@ -40,7 +40,7 @@
       font-size: 40px;
       line-height: 100%;
 
-      @include on-tablet {
+      @include onTablet {
         font-size: 64px;
         line-height: 64px;
         }
@@ -49,10 +49,12 @@
 
   &__icons {
   display: flex;
-  gap: 24px;
+  gap: $geader-icons-gap;
+  margin-top: 36px;
 
-  @include on-tablet {
+  @include onTablet {
     gap: 55px;
+    margin-top: 66px;
   }
   }
 }

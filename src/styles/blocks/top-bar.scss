@@ -2,9 +2,9 @@
   display: flex;
   justify-content: space-between;
   position: relative;
+  align-items: flex-start;
 
-  @include on-tablet {
-    top: 48px;
+  @include onTablet {
     padding: 0 72px;
   }
 }
