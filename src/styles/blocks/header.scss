@@ -21,7 +21,7 @@
   align-items: center;
   text-align: center;
 
-  @include onTablet {
+  @include on-tablet {
     top: 256px;
     width: 400px;
     height: 128px;
@@ -40,7 +40,7 @@
       font-size: 40px;
       line-height: 100%;
 
-      @include onTablet {
+      @include on-tablet {
         font-size: 64px;
         line-height: 64px;
         }
@@ -52,7 +52,7 @@
   gap: $geader-icons-gap;
   margin-top: 36px;
 
-  @include onTablet {
+  @include on-tablet {
     gap: 55px;
     margin-top: 66px;
   }

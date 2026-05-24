@@ -1,11 +1,11 @@
 .footer {
   margin-top: 84px;
 
-  @include onTablet {
+  @include on-tablet {
     margin-top: 156px;
   }
 
-  @include onDesktop {
+  @include on-desktop {
     margin-top: 134px;
   }
 
@@ -15,7 +15,7 @@
     height: 180px;
     object-fit: cover;
 
-    @include onTablet {
+    @include on-tablet {
       height: 359px;
     }
   }

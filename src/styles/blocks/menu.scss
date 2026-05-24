@@ -1,8 +1,8 @@
 .menu {
   overflow: auto;
 
-  @include contentPaddingInline;
-  
+  @include content-padding-inline;
+
   box-sizing: border-box;
   background-color: $background-color;
   color: $menu-text-color;
@@ -28,7 +28,7 @@
     margin-top: 40px;
     margin-bottom: 32px;
 
-    @include onTablet {
+    @include on-tablet {
       margin-top: 118px;
     }
   }

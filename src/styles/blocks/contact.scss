@@ -10,11 +10,11 @@
     grid-column: 1 / span 2;
     font-style: normal;
 
-    @include onTablet {
+    @include on-tablet {
       grid-column: 1 / span 3;
     }
 
-    @include onDesktop {
+    @include on-desktop {
       grid-column: span 3;
     }
   }

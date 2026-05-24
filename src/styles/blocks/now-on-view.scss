@@ -15,11 +15,11 @@
 
     grid-column: span 2;
 
-    @include onTablet {
+    @include on-tablet {
       grid-column: 2 / span 4;
     }
 
-    @include onDesktop {
+    @include on-desktop {
       grid-column: 5 / span 4;
     }
   }
@@ -32,13 +32,13 @@
     margin-top: 48px;
     margin-bottom: 24px;
 
-    @include onTablet {
+    @include on-tablet {
       .exhibition__link:nth-child(3) {
         display: none;
       }
     }
 
-    @include onDesktop {
+    @include on-desktop {
       .exhibition__link:nth-child(3) {
         display: block;
       }
@@ -46,7 +46,8 @@
   }
 
   &__photos {
-    @include pageGrid;
+    @include page-grid;
+
     margin-top: 48px;
     margin-bottom: 24px;
   }
@@ -55,21 +56,21 @@
     display: block;
     overflow: hidden;
     &--wide {
-      @include onTablet {
+      @include on-tablet {
         grid-column: span 4;
       }
 
-      @include onDesktop {
+      @include on-desktop {
         grid-column: span 8;
       }
     }
 
     &--square {
-      @include onTablet {
+      @include on-tablet {
         grid-column: span 2;
       }
 
-      @include onDesktop {
+      @include on-desktop {
         grid-column: span 4;
       }
     }
@@ -105,6 +106,6 @@
 
 .button {
   &__wrapper {
-    @include pageGrid;
+    @include page-grid;
   }
 }
