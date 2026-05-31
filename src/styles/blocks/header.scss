@@ -48,14 +48,14 @@
   }
 
   &__icons {
-  display: flex;
-  gap: $geader-icons-gap;
-  margin-top: 36px;
+    display: flex;
+    gap: $geader-icons-gap;
+    margin-top: 36px;
 
-  @include on-tablet {
-    gap: 55px;
-    margin-top: 66px;
-  }
+    @include on-tablet {
+      gap: 55px;
+      margin-top: 66px;
+    }
   }
 }
 

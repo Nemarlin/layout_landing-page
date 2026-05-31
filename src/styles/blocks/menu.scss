@@ -1,8 +1,6 @@
 .menu {
   overflow: auto;
 
-  @include content-padding-inline;
-
   box-sizing: border-box;
   background-color: $background-color;
   color: $menu-text-color;
@@ -17,9 +15,34 @@
   &__top {
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    box-sizing: border-box;
+
+    padding-inline: 20px;
+    padding-top: 36px;
+
+    @include on-tablet {
+      padding-inline: 72px;
+      padding-top: 66px;
+    }
+
+    @include on-desktop {
+      padding-inline: 120px;
+    }
   }
 
   &__content {
+    padding-inline: 20px;
+
+    @include on-tablet {
+      padding-inline: 72px;
+    }
+
+    @include on-desktop {
+      padding-inline: 120px;
+    }
+
     display: flex;
     flex-direction: column;
   }
