@@ -55,6 +55,8 @@
   &__link {
     display: block;
     overflow: hidden;
+    flex: 1;
+    
     &--wide {
       @include on-tablet {
         grid-column: span 4;
